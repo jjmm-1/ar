@@ -34,9 +34,9 @@ public class App {
             System.err.println("msg = " + e.getMessage());
             e.printStackTrace();
         }
-        System.out.println("size of elements = " + doc.getAllElements().size());
+        //System.out.println("size of elements = " + doc.getAllElements().size());
         Elements entries = doc.select("div");
-        System.out.println("entries size = " + entries.size());
+        //System.out.println("entries size = " + entries.size());
         for (Element ele : entries) System.out.println(ele.html());
         int count = 0;
         for (Element div : entries) {
@@ -58,8 +58,8 @@ public class App {
             if (prntDbg)
                 System.out.println(entry);
         }
-        if (prntDbg)
-            System.out.println(count);
+        //if (prntDbg)
+            //System.out.println(count);
         return result;
     }
 }
